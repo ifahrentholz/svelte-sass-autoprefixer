@@ -23,10 +23,7 @@ export default {
       dev: !production,
       preprocess: autoPreprocess({
         postcss: {
-          plugins: [
-            require("autoprefixer")({ browsers: "last 2 versions" }),
-            require("postcss-modules-values")
-          ]
+          plugins: [require("autoprefixer")({ browsers: "last 2 versions" })]
         }
       })
       // we'll extract any component CSS out into
